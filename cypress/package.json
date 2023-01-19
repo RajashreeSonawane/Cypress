@@ -1,0 +1,36 @@
+{
+  "name": "rajashree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   
+    "scripts": "npx cypress run",
+    "chrome:scripts":"np  x cypress run --browser chrome",
+    "firefox:scripts":"npx cypress run --browser firefox",
+    
+   
+    
+    "test": "npm run scripts",
+    "chrome:test": "npm run chrome:scripts",
+    "firefox:test": "npm run firefox:scripts",
+    "electron:test": "npm run electron:scripts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.11.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mouse-position": "^1.0.0",
+    "cypress-recurse": "^1.24.0",
+    "cypress-wait-until": "^1.7.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "cypress-mysql": "^1.0.0",
+    "mocha": "^10.1.0"
+  }
+}

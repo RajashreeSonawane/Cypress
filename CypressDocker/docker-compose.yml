@@ -1,0 +1,20 @@
+version: "3.1"
+services:
+#this container will run cypress test usingbuilt-in electron browser
+    e2e-electron:
+      image: cyp-dock-test
+      command: "electron:scripts"
+     
+
+      #this container will run cypress test usingbuilt-in electron browser
+    e2e-chrome:
+      image: cyp-dock-test
+      command: "chrome:scripts"
+      
+
+      #this container will run cypress test usingbuilt-in firefox browser
+      # note that both chrome and firefox browsers were pre-installed in the docker image
+    e2e-firefox:
+      image: cyp-dock-test
+      command: "firefox:test"
+      # if you want to debug FF run , pass DEBUG variable like
